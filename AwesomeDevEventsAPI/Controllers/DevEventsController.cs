@@ -25,7 +25,7 @@ namespace AwesomeDevEventsAPI.Controllers
         }
 
         // api/dev-events/123123 GET
-        [HttpGet]
+        [HttpGet("churusbangu/{id}")]
         public IActionResult GetById( Guid id)
         {
             var devEvent = _context.DevEvents.SingleOrDefault(d => d.Id == id);
